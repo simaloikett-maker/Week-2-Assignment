@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>
+            <img src="images/logo.png" alt="Budget Tracker Logo" width="50">
+            Personal Budget Tracker
+        </h1>
+    </header>
+
+    <!-- Add Expense Section -->
+    <section class="add-expense-section">
+        <h2>Add New Expense</h2>
+
+        <form>
+
+            <label for="expense-name">Expense Name</label>
+            <input
+                type="text"
+                id="expense-name"
+                placeholder="Enter expense name">
+
+            <label for="expense-amount">Amount</label>
+            <input
+                type="number"
+                id="expense-amount"
+                placeholder="Enter amount">
+
+            <label for="expense-category">Category</label>
+            <select id="expense-category">
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Rent</option>
+                <option>Entertainment</option>
+                <option>Other</option>
+            </select>
+
+            <label for="expense-date">Date</label>
+            <input
+                type="date"
+                id="expense-date">
+
+            <button type="button">Add Expense</button>
+
+        </form>
+    </section>
+
+    <!-- Expense Table -->
+    <section class="expenses-section">
+
+        <h2>Expense List</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Groceries</td>
+                    <td>KES 3,200</td>
+                    <td>Food</td>
+                    <td>02/07/2026</td>
+                </tr>
+
+                <tr>
+                    <td>Bus Fare</td>
+                    <td>KES 450</td>
+                    <td>Transport</td>
+                    <td>04/07/2026</td>
+                </tr>
+
+                <tr>
+                    <td>House Rent</td>
+                    <td>KES 18,000</td>
+                    <td>Rent</td>
+                    <td>05/07/2026</td>
+                </tr>
+
+                <tr>
+                    <td>Movie Night</td>
+                    <td>KES 1,200</td>
+                    <td>Entertainment</td>
+                    <td>10/07/2026</td>
+                </tr>
+
+                <tr>
+                    <td>Internet Bundle</td>
+                    <td>KES 1,000</td>
+                    <td>Other</td>
+                    <td>13/07/2026</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Details Section -->
+
+    <section class="instructions">
+
+        <details>
+
+            <summary>How to Use This Budget Tracker</summary>
+
+            <p>
+                Fill in the expense name, amount, category, and date,
+                then click the Add Expense button.
+                In future weeks JavaScript will automatically add
+                your expenses into the table.
+            </p>
+
+        </details>
+
+    </section>
+
+    <!-- YouTube Video -->
+
+    <section class="video-section">
+
+        <h2>Budgeting Tips</h2>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HQzoZfc3GwQ"
+            title="Budgeting Tips"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+    </section>
+
+</body>
+</html>
