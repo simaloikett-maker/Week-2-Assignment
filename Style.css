@@ -1,1 +1,142 @@
+/* General Page */
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    margin:30px;
+}
+
+h1{
+    color:#1d3557;
+}
+
+h2{
+    color:#2c3e50;
+}
+
+/* Form Styling */
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+button{
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+/* Expense Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,
+td{
+    border:1px solid #cccccc;
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#0077b6;
+    color:white;
+}
+
+/* Alternating rows */
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* Hover effect */
+
+tbody tr:hover{
+    background:#d8f3dc;
+}
+
+/* Details */
+
+details{
+    margin-top:30px;
+    background:white;
+    padding:15px;
+    border-radius:5px;
+}
+
+summary{
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Video */
+
+.video-section{
+    margin-top:40px;
+}
+
+/* ===========================
+   Advanced CSS Selectors
+=========================== */
+
+/* 1 Descendant Selector */
+
+.expenses-section td{
+    color:#333333;
+}
+
+/* 2 Direct Child Selector */
+
+.add-expense-section > form{
+    border:2px solid #0077b6;
+}
+
+/* 3 Position Pseudo-class */
+
+tr:first-child{
+    font-weight:bold;
+}
+
+/* 4 Negation Selector */
+
+input:not([type="date"]){
+    background:#fafafa;
+}
+
+/* 5 Focus Selector */
+
+input:focus,
+select:focus{
+    border:2px solid #0077b6;
+    outline:none;
+    background:#eaf6ff;
+}
